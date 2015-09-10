@@ -8,18 +8,15 @@ var romans = function(userNumber) {
       var symbols = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
       var results = [];
       var i = 0;
-      var count = 0;
 
       while(number > 0) {
         while(i < values.length) {
               if(number >= values[i]) {
                   results.push(symbols[i]);
                   number = number - values[i];
-                  count++;
                   console.debug(results);
               } else {
                   i++;
-                  count = 0;
               }
         }
       }
