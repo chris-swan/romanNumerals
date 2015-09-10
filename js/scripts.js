@@ -21,11 +21,11 @@ var romans = function(userNumber) {
         }
       }
       //code to remove the commas from result:
-          var noComma = "";
+          var noComma = '';
           for (var j = 0;
             j< results.length;
             j++) {
-            noComma+=results[j]+"";
+            noComma+=results[j];
           }
          return noComma;
      }
